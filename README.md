@@ -6,7 +6,9 @@ This project demonstrates proof-of-concept programs written in Java and compiled
 
 ![Tetris with Game Link multiplayer](demos/tetris-two-player-garbage-fixed.gif)
 
-Java is compiled ahead of time through **TeaVM IR → C → GBDK/SDCC → native machine code**, packaged as a Game Boy ROM. Game logic lives in Java, with a small shared native layer for hardware access. The demos run the compiled ROMs in emulation; Tetris supports original-cartridge interoperability, while full Pokémon Pinball parity remains in progress.
+Java is AOT compiled through **TeaVM IR → C → GBDK/SDCC → native machine code**. Game logic lives in Java, with a small shared native layer for hardware access. The demos run the compiled ROMs in emulation; Tetris supports original-cartridge interoperability.
+
+### Example code
 
 A simplified input-and-render update looks like this, with tile graphics already loaded:
 
