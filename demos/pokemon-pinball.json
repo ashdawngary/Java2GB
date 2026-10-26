@@ -1,0 +1,1745 @@
+{
+  "rom_sha256": "b48dcd93431b5f4cb7e8577df0b9ceb7267e83845b073c9b08c503fb7b35fa2e",
+  "emulator": "SameBoy 1.0.4",
+  "model": "CGB",
+  "controller_inputs_only": true,
+  "hardware_frame_seconds": 0.016742706298828125,
+  "duration_seconds": 34.79,
+  "gameplay_hardware_frames": 1792,
+  "frames": 519,
+  "current_rebuild_full_original_game_parity": false,
+  "fields": [
+    {
+      "field": "Red",
+      "scene": 2,
+      "lives": 3,
+      "contacts": 151,
+      "flipper_hits": 16,
+      "bumper_hits": 9,
+      "stages": [
+        0,
+        1
+      ]
+    },
+    {
+      "field": "Blue",
+      "scene": 2,
+      "lives": 3,
+      "contacts": 129,
+      "flipper_hits": 13,
+      "bumper_hits": 0,
+      "stages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "inputs": [
+    [
+      60,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      60,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      61,
+      "Red",
+      []
+    ],
+    [
+      61,
+      "Blue",
+      []
+    ],
+    [
+      97,
+      "Blue",
+      [
+        "right"
+      ]
+    ],
+    [
+      98,
+      "Blue",
+      []
+    ],
+    [
+      159,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      159,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      160,
+      "Red",
+      []
+    ],
+    [
+      160,
+      "Blue",
+      []
+    ],
+    [
+      226,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      226,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      227,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      227,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      265,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      266,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      284,
+      "Blue",
+      []
+    ],
+    [
+      286,
+      "Red",
+      []
+    ],
+    [
+      307,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      310,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      343,
+      "Blue",
+      []
+    ],
+    [
+      344,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      350,
+      "Red",
+      []
+    ],
+    [
+      351,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      383,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      393,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      415,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      424,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      429,
+      "Blue",
+      []
+    ],
+    [
+      442,
+      "Red",
+      []
+    ],
+    [
+      469,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      471,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      480,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      482,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      501,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      511,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      519,
+      "Blue",
+      []
+    ],
+    [
+      529,
+      "Red",
+      []
+    ],
+    [
+      534,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      545,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      575,
+      "Blue",
+      []
+    ],
+    [
+      578,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      596,
+      "Red",
+      []
+    ],
+    [
+      599,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      612,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      634,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      634,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      648,
+      "Blue",
+      []
+    ],
+    [
+      661,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      681,
+      "Red",
+      []
+    ],
+    [
+      686,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      691,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      720,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      725,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      726,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      755,
+      "Blue",
+      []
+    ],
+    [
+      764,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      766,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      797,
+      "Red",
+      []
+    ],
+    [
+      809,
+      "Blue",
+      []
+    ],
+    [
+      813,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      817,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      849,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      850,
+      "Red",
+      []
+    ],
+    [
+      855,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      872,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      881,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      886,
+      "Blue",
+      []
+    ],
+    [
+      904,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      918,
+      "Red",
+      []
+    ],
+    [
+      935,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      941,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      953,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      960,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      971,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      991,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      994,
+      "Blue",
+      []
+    ],
+    [
+      1004,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1017,
+      "Red",
+      []
+    ],
+    [
+      1028,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1041,
+      "Blue",
+      []
+    ],
+    [
+      1050,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1066,
+      "Red",
+      []
+    ],
+    [
+      1075,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1080,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1109,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1110,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1118,
+      "Blue",
+      []
+    ],
+    [
+      1133,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1141,
+      "Red",
+      []
+    ],
+    [
+      1151,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1163,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1183,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1193,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1195,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1221,
+      "Blue",
+      []
+    ],
+    [
+      1224,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1231,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1253,
+      "Red",
+      []
+    ],
+    [
+      1260,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1271,
+      "Blue",
+      []
+    ],
+    [
+      1282,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1302,
+      "Red",
+      []
+    ],
+    [
+      1313,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1317,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1345,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1348,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1351,
+      "Blue",
+      []
+    ],
+    [
+      1385,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1392,
+      "Red",
+      []
+    ],
+    [
+      1395,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1406,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1430,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1433,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1447,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1467,
+      "Blue",
+      []
+    ],
+    [
+      1482,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1482,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1518,
+      "Red",
+      []
+    ],
+    [
+      1520,
+      "Blue",
+      []
+    ],
+    [
+      1527,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1532,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1553,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1563,
+      "Red",
+      []
+    ],
+    [
+      1574,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1581,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1585,
+      "Blue",
+      []
+    ],
+    [
+      1600,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1620,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1633,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1639,
+      "Red",
+      []
+    ],
+    [
+      1639,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1663,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1677,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1695,
+      "Blue",
+      []
+    ],
+    [
+      1698,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1699,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1720,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1735,
+      "Blue",
+      []
+    ],
+    [
+      1753,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1763,
+      "Red",
+      []
+    ],
+    [
+      1766,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1774,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1806,
+      "Red",
+      []
+    ],
+    [
+      1816,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1819,
+      "Blue",
+      []
+    ],
+    [
+      1820,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1840,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1857,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1869,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1871,
+      "Red",
+      []
+    ],
+    [
+      1874,
+      "Blue",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1899,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      1908,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      1928,
+      "Red",
+      [
+        "a",
+        "left"
+      ]
+    ],
+    [
+      1933,
+      "Blue",
+      []
+    ],
+    [
+      1935,
+      "Blue",
+      [
+        "left"
+      ]
+    ],
+    [
+      1946,
+      "Red",
+      [
+        "a"
+      ]
+    ],
+    [
+      1976,
+      "Blue",
+      []
+    ],
+    [
+      1985,
+      "Red",
+      []
+    ],
+    [
+      1986,
+      "Red",
+      [
+        "left"
+      ]
+    ],
+    [
+      2003,
+      "Blue",
+      [
+        "a"
+      ]
+    ],
+    [
+      2018,
+      "Red",
+      []
+    ],
+    [
+      2018,
+      "Blue",
+      []
+    ]
+  ],
+  "samples": [
+    {
+      "frame": 227,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 42752,
+          "y": 38912,
+          "contacts": 0,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        },
+        {
+          "stage": 5,
+          "x": 42752,
+          "y": 38912,
+          "contacts": 0,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 287,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 40545,
+          "y": 18322,
+          "contacts": 2,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        },
+        {
+          "stage": 4,
+          "x": 41158,
+          "y": 15892,
+          "contacts": 1,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 347,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 11074,
+          "y": 11251,
+          "contacts": 9,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        },
+        {
+          "stage": 4,
+          "x": 9552,
+          "y": 10130,
+          "contacts": 8,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 407,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 7484,
+          "y": 8221,
+          "contacts": 17,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        },
+        {
+          "stage": 5,
+          "x": 6305,
+          "y": 8896,
+          "contacts": 17,
+          "flipper_hits": 0,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 467,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 26071,
+          "y": 28237,
+          "contacts": 20,
+          "flipper_hits": 0,
+          "bumper_hits": 1
+        },
+        {
+          "stage": 5,
+          "x": 26103,
+          "y": 25688,
+          "contacts": 18,
+          "flipper_hits": 1,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 527,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 25599,
+          "y": 29122,
+          "contacts": 20,
+          "flipper_hits": 0,
+          "bumper_hits": 1
+        },
+        {
+          "stage": 5,
+          "x": 33535,
+          "y": 23755,
+          "contacts": 20,
+          "flipper_hits": 1,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 587,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 42752,
+          "y": 38912,
+          "contacts": 23,
+          "flipper_hits": 0,
+          "bumper_hits": 1
+        },
+        {
+          "stage": 5,
+          "x": 26664,
+          "y": 32304,
+          "contacts": 33,
+          "flipper_hits": 1,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 647,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 41093,
+          "y": 20089,
+          "contacts": 25,
+          "flipper_hits": 0,
+          "bumper_hits": 1
+        },
+        {
+          "stage": 5,
+          "x": 21677,
+          "y": 33344,
+          "contacts": 35,
+          "flipper_hits": 3,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 707,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 13590,
+          "y": 9700,
+          "contacts": 31,
+          "flipper_hits": 0,
+          "bumper_hits": 1
+        },
+        {
+          "stage": 5,
+          "x": 21219,
+          "y": 38685,
+          "contacts": 38,
+          "flipper_hits": 4,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 767,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 7283,
+          "y": 42116,
+          "contacts": 40,
+          "flipper_hits": 0,
+          "bumper_hits": 1
+        },
+        {
+          "stage": 5,
+          "x": 42752,
+          "y": 10774,
+          "contacts": 40,
+          "flipper_hits": 4,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 827,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 26111,
+          "y": 29922,
+          "contacts": 43,
+          "flipper_hits": 0,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 4,
+          "x": 30994,
+          "y": 7857,
+          "contacts": 43,
+          "flipper_hits": 4,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 887,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 25639,
+          "y": 27562,
+          "contacts": 43,
+          "flipper_hits": 0,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 4,
+          "x": 3295,
+          "y": 23976,
+          "contacts": 52,
+          "flipper_hits": 4,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 947,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 28852,
+          "y": 31010,
+          "contacts": 53,
+          "flipper_hits": 1,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 20864,
+          "y": 30999,
+          "contacts": 57,
+          "flipper_hits": 4,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1007,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 25509,
+          "y": 31961,
+          "contacts": 58,
+          "flipper_hits": 3,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 13411,
+          "y": 31519,
+          "contacts": 59,
+          "flipper_hits": 4,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1067,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 23544,
+          "y": 34671,
+          "contacts": 60,
+          "flipper_hits": 5,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 15046,
+          "y": 32782,
+          "contacts": 63,
+          "flipper_hits": 5,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1127,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 10490,
+          "y": 15158,
+          "contacts": 65,
+          "flipper_hits": 6,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 22277,
+          "y": 16292,
+          "contacts": 65,
+          "flipper_hits": 6,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1187,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 20296,
+          "y": 38235,
+          "contacts": 68,
+          "flipper_hits": 7,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 18920,
+          "y": 30990,
+          "contacts": 67,
+          "flipper_hits": 7,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1247,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 15365,
+          "y": 40178,
+          "contacts": 69,
+          "flipper_hits": 7,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 21195,
+          "y": 35837,
+          "contacts": 68,
+          "flipper_hits": 7,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1307,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 42752,
+          "y": 5658,
+          "contacts": 70,
+          "flipper_hits": 7,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 42752,
+          "y": 28680,
+          "contacts": 71,
+          "flipper_hits": 8,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1367,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 29987,
+          "y": 9675,
+          "contacts": 76,
+          "flipper_hits": 7,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 4,
+          "x": 37284,
+          "y": 12552,
+          "contacts": 74,
+          "flipper_hits": 8,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1427,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 4760,
+          "y": 25912,
+          "contacts": 83,
+          "flipper_hits": 7,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 4,
+          "x": 5287,
+          "y": 15692,
+          "contacts": 81,
+          "flipper_hits": 8,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1487,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 11779,
+          "y": 25199,
+          "contacts": 88,
+          "flipper_hits": 7,
+          "bumper_hits": 2
+        },
+        {
+          "stage": 5,
+          "x": 12002,
+          "y": 16852,
+          "contacts": 88,
+          "flipper_hits": 8,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1547,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 33135,
+          "y": 27725,
+          "contacts": 110,
+          "flipper_hits": 8,
+          "bumper_hits": 3
+        },
+        {
+          "stage": 5,
+          "x": 27599,
+          "y": 23048,
+          "contacts": 89,
+          "flipper_hits": 9,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1607,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 27733,
+          "y": 31508,
+          "contacts": 126,
+          "flipper_hits": 8,
+          "bumper_hits": 3
+        },
+        {
+          "stage": 5,
+          "x": 33193,
+          "y": 25915,
+          "contacts": 91,
+          "flipper_hits": 9,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1667,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 21958,
+          "y": 35935,
+          "contacts": 127,
+          "flipper_hits": 9,
+          "bumper_hits": 3
+        },
+        {
+          "stage": 5,
+          "x": 25446,
+          "y": 31526,
+          "contacts": 105,
+          "flipper_hits": 10,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1727,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 20867,
+          "y": 36568,
+          "contacts": 133,
+          "flipper_hits": 12,
+          "bumper_hits": 4
+        },
+        {
+          "stage": 5,
+          "x": 21038,
+          "y": 35783,
+          "contacts": 106,
+          "flipper_hits": 11,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1787,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 16259,
+          "y": 8692,
+          "contacts": 138,
+          "flipper_hits": 12,
+          "bumper_hits": 7
+        },
+        {
+          "stage": 5,
+          "x": 22180,
+          "y": 39476,
+          "contacts": 110,
+          "flipper_hits": 12,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1847,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 24572,
+          "y": 15264,
+          "contacts": 140,
+          "flipper_hits": 12,
+          "bumper_hits": 9
+        },
+        {
+          "stage": 4,
+          "x": 42752,
+          "y": 36637,
+          "contacts": 111,
+          "flipper_hits": 12,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1907,
+      "fields": [
+        {
+          "stage": 0,
+          "x": 21257,
+          "y": 40226,
+          "contacts": 141,
+          "flipper_hits": 12,
+          "bumper_hits": 9
+        },
+        {
+          "stage": 4,
+          "x": 24635,
+          "y": 6276,
+          "contacts": 116,
+          "flipper_hits": 12,
+          "bumper_hits": 0
+        }
+      ]
+    },
+    {
+      "frame": 1967,
+      "fields": [
+        {
+          "stage": 1,
+          "x": 26544,
+          "y": 32126,
+          "contacts": 142,
+          "flipper_hits": 12,
+          "bumper_hits": 9
+        },
+        {
+          "stage": 4,
+          "x": 3709,
+          "y": 32481,
+          "contacts": 123,
+          "flipper_hits": 12,
+          "bumper_hits": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,786 @@
+[
+  {
+    "group": 0,
+    "name": "RED_VOLTORB",
+    "label": "RedStageVoltorb",
+    "latch": "wWhichVoltorb",
+    "width": 14,
+    "height": 14,
+    "attributes": [
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245
+    ],
+    "records": [
+      [
+        3,
+        66,
+        102
+      ],
+      [
+        4,
+        90,
+        92
+      ],
+      [
+        5,
+        85,
+        120
+      ]
+    ]
+  },
+  {
+    "group": 1,
+    "name": "RED_SPINNER",
+    "label": "RedStageSpinner",
+    "latch": "wSpinnerCollision",
+    "width": 8,
+    "height": 4,
+    "attributes": [],
+    "records": [
+      [
+        9,
+        144,
+        108
+      ]
+    ]
+  },
+  {
+    "group": 2,
+    "name": "RED_BOARD",
+    "label": "RedStageBoardTriggers",
+    "latch": "wWhichBoardTrigger",
+    "width": 9,
+    "height": 9,
+    "attributes": [],
+    "records": [
+      [
+        17,
+        28,
+        60
+      ],
+      [
+        18,
+        42,
+        68
+      ],
+      [
+        19,
+        37,
+        99
+      ],
+      [
+        20,
+        18,
+        122
+      ],
+      [
+        21,
+        38,
+        132
+      ],
+      [
+        22,
+        124,
+        68
+      ],
+      [
+        23,
+        142,
+        122
+      ],
+      [
+        24,
+        127,
+        57
+      ]
+    ]
+  },
+  {
+    "group": 3,
+    "name": "RED_STARYU_TOP",
+    "label": "RedStageTopStaryu",
+    "latch": "wStaryuCollision",
+    "width": 8,
+    "height": 6,
+    "attributes": [
+      16,
+      17,
+      18
+    ],
+    "records": [
+      [
+        25,
+        64,
+        144
+      ]
+    ]
+  },
+  {
+    "group": 4,
+    "name": "RED_BELLSPROUT",
+    "label": "RedStageBellsprout",
+    "latch": "wBellsproutCollision",
+    "width": 6,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        27,
+        123,
+        118
+      ]
+    ]
+  },
+  {
+    "group": 5,
+    "name": "RED_DITTO",
+    "label": "RedStageDittoSlot",
+    "latch": "wDittoSlotCollision",
+    "width": 3,
+    "height": 3,
+    "attributes": [],
+    "records": [
+      [
+        31,
+        18,
+        36
+      ]
+    ]
+  },
+  {
+    "group": 6,
+    "name": "RED_UPGRADE",
+    "label": "RedStagePinballUpgradeTrigger",
+    "latch": "wWhichPinballUpgradeTrigger",
+    "width": 6,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        14,
+        58,
+        83
+      ],
+      [
+        15,
+        80,
+        72
+      ],
+      [
+        16,
+        102,
+        73
+      ]
+    ]
+  },
+  {
+    "group": 7,
+    "name": "RED_WILD",
+    "label": "RedStageWildPokemon",
+    "latch": "wWildMonCollision",
+    "width": 26,
+    "height": 26,
+    "attributes": [
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223
+    ],
+    "records": [
+      [
+        30,
+        80,
+        64
+      ]
+    ]
+  },
+  {
+    "group": 8,
+    "name": "RED_STARYU_BOTTOM",
+    "label": "RedStageBottomStaryu",
+    "latch": "wStaryuCollision",
+    "width": 8,
+    "height": 6,
+    "attributes": [
+      86,
+      91,
+      92
+    ],
+    "records": [
+      [
+        26,
+        64,
+        8
+      ]
+    ]
+  },
+  {
+    "group": 9,
+    "name": "RED_DIGLETT",
+    "label": "RedStageDiglett",
+    "latch": "wWhichDiglett",
+    "width": 8,
+    "height": 12,
+    "attributes": [
+      100,
+      101,
+      104,
+      105
+    ],
+    "records": [
+      [
+        1,
+        32,
+        64
+      ],
+      [
+        2,
+        128,
+        64
+      ]
+    ]
+  },
+  {
+    "group": 10,
+    "name": "RED_MULTIPLIER",
+    "label": "RedStageBonusMultipliers",
+    "latch": "wWhichBonusMultiplierRailing",
+    "width": 7,
+    "height": 7,
+    "attributes": [
+      76,
+      75,
+      72,
+      71,
+      77,
+      74
+    ],
+    "records": [
+      [
+        33,
+        44,
+        32
+      ],
+      [
+        34,
+        116,
+        32
+      ]
+    ]
+  },
+  {
+    "group": 11,
+    "name": "RED_SLOT",
+    "label": "RedStageSlot",
+    "latch": "wSlotCollision",
+    "width": 4,
+    "height": 4,
+    "attributes": [],
+    "records": [
+      [
+        32,
+        80,
+        22
+      ]
+    ]
+  },
+  {
+    "group": 12,
+    "name": "RED_BUMPERS",
+    "label": "RedStageBumpers",
+    "latch": "wWhichBumper",
+    "width": 6,
+    "height": 11,
+    "attributes": [
+      50,
+      63,
+      55,
+      60,
+      52,
+      49,
+      62,
+      54,
+      59,
+      61
+    ],
+    "records": [
+      [
+        6,
+        48,
+        102
+      ],
+      [
+        7,
+        111,
+        102
+      ]
+    ]
+  },
+  {
+    "group": 13,
+    "name": "RED_PIKACHU",
+    "label": "RedStagePikachu",
+    "latch": "wWhichPikachu",
+    "width": 3,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        28,
+        14,
+        124
+      ],
+      [
+        29,
+        146,
+        124
+      ]
+    ]
+  },
+  {
+    "group": 14,
+    "name": "RED_CAVE",
+    "label": "RedStageCAVELights",
+    "latch": "wWhichCAVELight",
+    "width": 5,
+    "height": 3,
+    "attributes": [],
+    "records": [
+      [
+        10,
+        14,
+        101
+      ],
+      [
+        11,
+        30,
+        101
+      ],
+      [
+        12,
+        130,
+        101
+      ],
+      [
+        13,
+        146,
+        101
+      ]
+    ]
+  },
+  {
+    "group": 15,
+    "name": "RED_LAUNCH",
+    "label": "RedStageLaunchAlley",
+    "latch": "wPinballLaunchCollision",
+    "width": 8,
+    "height": 8,
+    "attributes": [],
+    "records": [
+      [
+        8,
+        168,
+        152
+      ]
+    ]
+  },
+  {
+    "group": 16,
+    "name": "BLUE_SHELLDER",
+    "label": "BlueStageShellder",
+    "latch": "wWhichShellder",
+    "width": 14,
+    "height": 14,
+    "attributes": [
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      152,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      153,
+      108,
+      109,
+      110,
+      111
+    ],
+    "records": [
+      [
+        3,
+        58,
+        86
+      ],
+      [
+        4,
+        79,
+        69
+      ],
+      [
+        5,
+        100,
+        86
+      ]
+    ]
+  },
+  {
+    "group": 17,
+    "name": "BLUE_SPINNER",
+    "label": "BlueStageSpinner",
+    "latch": "wSpinnerCollision",
+    "width": 8,
+    "height": 4,
+    "attributes": [],
+    "records": [
+      [
+        6,
+        146,
+        106
+      ]
+    ]
+  },
+  {
+    "group": 18,
+    "name": "BLUE_BOARD",
+    "label": "BlueStageBoardTriggers",
+    "latch": "wWhichBoardTrigger",
+    "width": 9,
+    "height": 9,
+    "attributes": [],
+    "records": [
+      [
+        7,
+        21,
+        67
+      ],
+      [
+        8,
+        139,
+        67
+      ],
+      [
+        9,
+        16,
+        140
+      ],
+      [
+        10,
+        143,
+        140
+      ]
+    ]
+  },
+  {
+    "group": 19,
+    "name": "BLUE_SLOWPOKE",
+    "label": "BlueStageSlowpoke",
+    "latch": "wSlowpokeCollision",
+    "width": 6,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        12,
+        44,
+        120
+      ]
+    ]
+  },
+  {
+    "group": 20,
+    "name": "BLUE_CLOYSTER",
+    "label": "BlueStageCloyster",
+    "latch": "wCloysterCollision",
+    "width": 6,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        11,
+        115,
+        120
+      ]
+    ]
+  },
+  {
+    "group": 21,
+    "name": "BLUE_UPGRADE",
+    "label": "BlueStagePinballUpgradeTriggers",
+    "latch": "wWhichPinballUpgradeTrigger",
+    "width": 6,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        19,
+        55,
+        52
+      ],
+      [
+        20,
+        79,
+        47
+      ],
+      [
+        21,
+        103,
+        53
+      ]
+    ]
+  },
+  {
+    "group": 22,
+    "name": "BLUE_WILD",
+    "label": "BlueStageWildPokemon",
+    "latch": "wWildMonCollision",
+    "width": 26,
+    "height": 26,
+    "attributes": [
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223
+    ],
+    "records": [
+      [
+        27,
+        80,
+        64
+      ]
+    ]
+  },
+  {
+    "group": 23,
+    "name": "BLUE_PSYDUCK",
+    "label": "BlueStagePsyduckPoliwag",
+    "latch": "wWhichPsyduckPoliwag",
+    "width": 8,
+    "height": 12,
+    "attributes": [
+      94,
+      95,
+      36,
+      37
+    ],
+    "records": [
+      [
+        17,
+        34,
+        62
+      ],
+      [
+        18,
+        125,
+        61
+      ]
+    ]
+  },
+  {
+    "group": 24,
+    "name": "BLUE_MULTIPLIER",
+    "label": "BlueStageBonusMultiplier",
+    "latch": "wWhichBonusMultiplierRailing",
+    "width": 9,
+    "height": 8,
+    "attributes": [
+      86,
+      89,
+      88,
+      87,
+      28,
+      90,
+      91,
+      92,
+      93,
+      29
+    ],
+    "records": [
+      [
+        15,
+        44,
+        32
+      ],
+      [
+        16,
+        116,
+        32
+      ]
+    ]
+  },
+  {
+    "group": 25,
+    "name": "BLUE_SLOT",
+    "label": "BlueStageSlot",
+    "latch": "wSlotCollision",
+    "width": 4,
+    "height": 4,
+    "attributes": [],
+    "records": [
+      [
+        26,
+        80,
+        22
+      ]
+    ]
+  },
+  {
+    "group": 26,
+    "name": "BLUE_BUMPERS",
+    "label": "BlueStageBumpers",
+    "latch": "wWhichBumper",
+    "width": 6,
+    "height": 11,
+    "attributes": [
+      52,
+      63,
+      57,
+      60,
+      56,
+      55,
+      63,
+      51,
+      50,
+      62,
+      61,
+      59,
+      58,
+      62,
+      54,
+      53,
+      49,
+      48
+    ],
+    "records": [
+      [
+        1,
+        48,
+        102
+      ],
+      [
+        2,
+        111,
+        102
+      ]
+    ]
+  },
+  {
+    "group": 27,
+    "name": "BLUE_PIKACHU",
+    "label": "BlueStagePikachu",
+    "latch": "wWhichPikachu",
+    "width": 3,
+    "height": 5,
+    "attributes": [],
+    "records": [
+      [
+        13,
+        14,
+        124
+      ],
+      [
+        14,
+        146,
+        124
+      ]
+    ]
+  },
+  {
+    "group": 28,
+    "name": "BLUE_CAVE",
+    "label": "BlueStageCAVELights",
+    "latch": "wWhichCAVELight",
+    "width": 5,
+    "height": 3,
+    "attributes": [],
+    "records": [
+      [
+        22,
+        14,
+        101
+      ],
+      [
+        23,
+        30,
+        101
+      ],
+      [
+        24,
+        130,
+        101
+      ],
+      [
+        25,
+        146,
+        101
+      ]
+    ]
+  },
+  {
+    "group": 29,
+    "name": "BLUE_LAUNCH",
+    "label": "BlueStageLaunchAlley",
+    "latch": "wPinballLaunchCollision",
+    "width": 8,
+    "height": 8,
+    "attributes": [],
+    "records": [
+      [
+        28,
+        168,
+        152
+      ]
+    ]
+  }
+]

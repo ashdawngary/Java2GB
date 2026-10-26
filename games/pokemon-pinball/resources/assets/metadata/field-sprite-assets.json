@@ -1,0 +1,11 @@
+{
+  "idle_pose_variants": {
+    "redBumpers": 1,
+    "ditto": 3,
+    "redCreatures": 2,
+    "blueBumpers": 1,
+    "blueCreatures": 1,
+    "pikachu": 1
+  },
+  "original_executable_bytes_copied": 0
+}

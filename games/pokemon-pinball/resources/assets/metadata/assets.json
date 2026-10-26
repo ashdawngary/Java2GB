@@ -1,0 +1,35 @@
+{
+  "reference_sha1": "9402014d14969432142abfde728c6f1a10ee4dac",
+  "generator_sha256": "0f0851573f5e50e8f0d8e6148afb1f00600b7115a9e3664bc14ccf53e23779c9",
+  "scenes": [
+    "title-dmg",
+    "select-red-dmg",
+    "select-blue-dmg",
+    "red-bottom-dmg",
+    "red-top-dmg",
+    "blue-bottom-dmg",
+    "blue-top-dmg",
+    "title-cgb",
+    "select-red-cgb",
+    "select-blue-cgb",
+    "red-bottom-cgb",
+    "red-top-cgb",
+    "blue-bottom-cgb",
+    "blue-top-cgb"
+  ],
+  "unique_vram_planes": 17,
+  "graphics_payload_bytes": 139264,
+  "original_executable_bytes_copied": 0,
+  "disassembly_reassembled_exactly": true,
+  "data_blobs": 23,
+  "object_groups": 4,
+  "structures": {
+    "original_transition_cases": 128,
+    "sentinel_seeds": 2,
+    "unique_payloads": 46,
+    "payload_bytes": 3748,
+    "transfer_segments": 48,
+    "original_executable_bytes_copied": 0,
+    "fixture_sha256": "698e61a6937ee66f1e2c91da5e12b6743d50fa92237b14a72c33520a51a816ba"
+  }
+}

@@ -1,0 +1,13 @@
+/.local/
+/.tools/
+/.venv/
+/build/
+
+/references/
+*.gb
+*.gbc
+*.sgb
+
+__pycache__/
+*.py[cod]
+.DS_Store

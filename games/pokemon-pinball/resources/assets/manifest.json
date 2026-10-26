@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "game": "pokemon-pinball",
+  "source_rom_sha1": "9402014d14969432142abfde728c6f1a10ee4dac",
+  "original_executable_bytes_copied": 0,
+  "files": {
+    "resources/assets/data/blob-0.bin": {
+      "bytes": 16384,
+      "sha256": "21ec262bac2a3c1a80232a458bb28780e802431e17af888bb17f638bf57763b9"
+    },
+    "resources/assets/data/blob-1.bin": {
+      "bytes": 8192,
+      "sha256": "f25f44425039120296e6f4cb340521e4bb3c56e290dcde9bad9a4428cb492c72"
+    },
+    "resources/assets/data/blob-10.bin": {
+      "bytes": 768,
+      "sha256": "777dcdea0926f941f6a83ac4f60342da748d846c6bab9ce80e23b46ec8352f1f"
+    },
+    "resources/assets/data/blob-11.bin": {
+      "bytes": 768,
+      "sha256": "d8e206752676da3aaf343a8e8f24b6f099f9fe5a493b92e14f59de09efa832d7"
+    },
+    "resources/assets/data/blob-12.bin": {
+      "bytes": 2048,
+      "sha256": "80de499044f6b8cd6ab4a8947616b9b160957ee2c027fc60477aea6345351ec8"
+    },
+    "resources/assets/data/blob-13.bin": {
+      "bytes": 2048,
+      "sha256": "2efe4115fa3a73e689ce67f78e2fa50cb0a8faad8aa0e70000b50f5544b072bd"
+    },
+    "resources/assets/data/blob-14.bin": {
+      "bytes": 2048,
+      "sha256": "3680c94ed15174dfe25707996a6b0dbd764cdbe1e0e3fecd7bedb81a3f42a1bd"
+    },
+    "resources/assets/data/blob-15.bin": {
+      "bytes": 2048,
+      "sha256": "4923ff75437918535b595ccc28bdb7a0a6d8b8c4b9d80b5ee2db2961cb456c10"
+    },
+    "resources/assets/data/blob-16.bin": {
+      "bytes": 768,
+      "sha256": "b0569069dae8431f0669224182a6eef15e8850506a698d6219ce3d517547493b"
+    },
+    "resources/assets/data/blob-17.bin": {
+      "bytes": 2048,
+      "sha256": "d67141d8ca96c450de0feffa764786ab2f0caf84ca8fad7759b6946eeaf70e64"
+    },
+    "resources/assets/data/blob-18.bin": {
+      "bytes": 768,
+      "sha256": "8267ce9a8fdf9bb099a27cd5059f7a7536dd8a8fd71e20ac27ac5736c711dcbb"
+    },
+    "resources/assets/data/blob-19.bin": {
+      "bytes": 768,
+      "sha256": "2c6cd1fedfd2e7a93ca4dac6a0ec4973927946d265880ff05f7b5bb96157cedc"
+    },
+    "resources/assets/data/blob-2.bin": {
+      "bytes": 8192,
+      "sha256": "e319c4687352d2e642e82d89a8498d32903e6767f38def04a66d224d00a175cc"
+    },
+    "resources/assets/data/blob-20.bin": {
+      "bytes": 2048,
+      "sha256": "ac95c5334243fee9f436bc0fbf3b51c19ebc0cccb08dd6a269e247626b7ff97c"
+    },
+    "resources/assets/data/blob-21.bin": {
+      "bytes": 768,
+      "sha256": "a04905a4e51b43a2a7d225e38409084657606133df7bc0c627679b73af3a40a0"
+    },
+    "resources/assets/data/blob-22.bin": {
+      "bytes": 2048,
+      "sha256": "e03ea30e8b63eb60c300a670a61413883e5c7a35460600e327a5e20253ff7d86"
+    },
+    "resources/assets/data/blob-3.bin": {
+      "bytes": 16384,
+      "sha256": "fd1758938f52cc5b19c68e69584d3059d6af52b91c14371699d94042b4cc3501"
+    },
+    "resources/assets/data/blob-4.bin": {
+      "bytes": 768,
+      "sha256": "ab77448216b9f96d5825a6adab5f9a631942a27b163ffdcaf2ac807b6cb48a56"
+    },
+    "resources/assets/data/blob-5.bin": {
+      "bytes": 768,
+      "sha256": "9718e1aca94b9477c4edd98f1fbb9283e3ae4bfe4bc13f51fae8a5f6f647207e"
+    },
+    "resources/assets/data/blob-6.bin": {
+      "bytes": 768,
+      "sha256": "7c52103348fda934a5bef64733dc812687c00bb26f01db156f84aaaaed50778c"
+    },
+    "resources/assets/data/blob-7.bin": {
+      "bytes": 768,
+      "sha256": "ae8f5083a16d35d61f5e664af096c95fc45232a5e9466c2aa1173b9c3fe772fc"
+    },
+    "resources/assets/data/blob-8.bin": {
+      "bytes": 768,
+      "sha256": "ba59d1fa03d683d3b0ca9778fbd2629637b1f77ae05981842c7820dcbfc02d5a"
+    },
+    "resources/assets/data/blob-9.bin": {
+      "bytes": 768,
+      "sha256": "f1c6bf59f707857fbe45df0d85e1a61c6b188a9063419ab3fba42bb83e2d5b85"
+    },
+    "resources/assets/metadata/assets.json": {
+      "bytes": 958,
+      "sha256": "474322c1c550f649ee33fbf059ca18a40c223257ef655bf8567f265ebaee7de4"
+    },
+    "resources/assets/metadata/field-sprite-assets.json": {
+      "bytes": 198,
+      "sha256": "a3c1925ad8d5211199d002a3ebe18cf6d6142f54260394ba3d66ac2fce650683"
+    },
+    "resources/assets/metadata/object-definitions.json": {
+      "bytes": 10731,
+      "sha256": "2d79bede4e91995d200b6a9550c7b45b312e71151a7e9f1e98fbd0949a4328e3"
+    },
+    "resources/assets/metadata/structure-assets.json": {
+      "bytes": 268,
+      "sha256": "f94621384229a337c04a08555c532622361ed4c4e041e7755982f51edb554d34"
+    },
+    "src/probe/PokemonBonusGraphics.java": {
+      "bytes": 20710,
+      "sha256": "7550c875304a0c1b0e27455230f2d5885bf8cef1b7e3bb598df9fdd17f31718b"
+    },
+    "src/probe/PokemonBonusVideoData.java": {
+      "bytes": 22895,
+      "sha256": "287691cf20d656d7cf95ea2a7ac44e95e03bd46c7af3ff62c056745442348bff"
+    },
+    "src/probe/PokemonData.java": {
+      "bytes": 11445,
+      "sha256": "5640ccd0d981e19da3c5d8bada96914f7f5702623645783bd4d08e49329cb961"
+    },
+    "src/probe/PokemonFieldSpriteData.java": {
+      "bytes": 11193,
+      "sha256": "2920b3e36499ef399b3e5022c346ac19b3e6919f233fb8efbd2192f251629ef9"
+    },
+    "src/probe/PokemonLightData.java": {
+      "bytes": 2793,
+      "sha256": "80ad4c4ed9766db892eed523fabf18ce6b1998fcbf24a29e32ee9acbafe710cd"
+    },
+    "src/probe/PokemonObjectData.java": {
+      "bytes": 11062,
+      "sha256": "493d72ad9e9f4895f26d304a1de72c734a6846bb5261f02ca4cc2b04a158305f"
+    },
+    "src/probe/PokemonPlaneData.java": {
+      "bytes": 559704,
+      "sha256": "3bee9564bfe05ccb4af638457cf2d90a9ff11a135e995061d4bec82a779875f3"
+    },
+    "src/probe/PokemonRomData.java": {
+      "bytes": 302988,
+      "sha256": "f307ad60b459f62c87f4b7a9593bffcf2500cdffaf12ae9bd6fa4ad2cf820d15"
+    },
+    "src/probe/PokemonSceneData.java": {
+      "bytes": 19079,
+      "sha256": "fbd158aeefb1a7d57a6e01630a9b4e184233a5f36d7fba4cf69b0293f81c00eb"
+    },
+    "src/probe/PokemonSelectData.java": {
+      "bytes": 9101,
+      "sha256": "04c64e20be39e596dc58b6eedc37c6e33cf698fc93e893e8c09ec22d82c03a77"
+    },
+    "src/probe/PokemonStructureData.java": {
+      "bytes": 5995,
+      "sha256": "876bbdd81ea72b4ee0e62d9600b68edc42da42f85000b74e30461d4dfc77273c"
+    },
+    "src/probe/PokemonVideoData.java": {
+      "bytes": 18495,
+      "sha256": "f483454af4b403adc09fedf5a1d93463475e367e4424cb85678d645960a91fc9"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "original_transition_cases": 128,
+  "sentinel_seeds": 2,
+  "unique_payloads": 46,
+  "payload_bytes": 3748,
+  "transfer_segments": 48,
+  "original_executable_bytes_copied": 0,
+  "fixture_sha256": "698e61a6937ee66f1e2c91da5e12b6743d50fa92237b14a72c33520a51a816ba"
+}
