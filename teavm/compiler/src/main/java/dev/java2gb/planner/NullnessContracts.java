@@ -9,7 +9,7 @@ final class NullnessContracts implements ClassHolderTransformer {
     private int lowered;
     NullnessContracts(String prefix) { this.prefix = prefix; }
     @Override public void transformClass(ClassHolder cls, ClassHolderTransformerContext context) {
-        if (!cls.getName().startsWith(prefix)) return;
+        if (!ApplicationScope.contains(prefix, cls.getName())) return;
         for (MethodHolder method : cls.getMethods()) {
             Program program = method.getProgram();
             if (program == null) continue;

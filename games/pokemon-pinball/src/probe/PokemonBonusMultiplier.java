@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 public final class PokemonBonusMultiplier {
   public static final int MAXIMUM = 99, EXTRA_INTERVAL = 25, COOLDOWN = 128, FAST_BLINK_AT = 112;

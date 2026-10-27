@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 public final class PinballPhysics {
     static void place(PinballGame.Table t, int x, int y, int vx, int vy) {
         t.state = PinballGame.PLAY; t.ball.lane = false;

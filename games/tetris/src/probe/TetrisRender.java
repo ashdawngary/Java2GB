@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 import static probe.TetrisLayout.*;
 import static probe.TetrisRules.PIECE_BLOCKS;

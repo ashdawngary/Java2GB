@@ -8,11 +8,11 @@ BUILD            := build
 
 .PHONY: help bootstrap clean build demo asm tetris pokemon-pinball pocket-pinball \
         pinball pokemon-pinball-build play tetris-play tetris-link \
-        pokemon-pinball-play pinball-play teavm-play teavm-plan-play \
+        pokemon-pinball-play pinball-play teavm-plan-play \
         teavm-pool-play test unit-test compiler-check tetris-check \
         tetris-render-check tetris-compat tetris-link-check pokemon-pinball-check \
         final-check nullness-check assets-check tetris-assets-extract \
-        pokemon-pinball-assets-extract teavm-probe teavm-plan teavm-bank \
+        pokemon-pinball-assets-extract teavm-plan teavm-bank \
         teavm-primitives teavm-rom-arrays teavm-mutability array-access-benchmark
 
 help:
@@ -92,9 +92,6 @@ pokemon-pinball-play: pokemon-pinball
 pinball-play: pocket-pinball
 	$(PYTHON) -m pyboy $(BUILD)/teavm/planned-pinball.gb
 
-teavm-play:
-	$(PYTHON) -m pyboy $(BUILD)/teavm/tiny-sprite.gb
-
 teavm-plan-play:
 	$(PYTHON) -m pyboy $(BUILD)/teavm/planned-owned-sprite.gb
 
@@ -138,9 +135,6 @@ tetris-assets-extract:
 
 pokemon-pinball-assets-extract:
 	$(PYTHON) $(TOOLING)/asset_bundle.py extract pokemon-pinball
-
-teavm-probe:
-	$(PYTHON) $(TOOLING)/teavm_probe.py
 
 teavm-plan:
 	$(PYTHON) $(TOOLING)/teavm_plan.py

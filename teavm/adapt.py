@@ -28,33 +28,6 @@ def primitive_array_includes(output):
             for source in sorted((output / directory).glob('*.c'))]
 
 
-def stage(generated, output, entry):
-    generated, output = Path(generated), Path(output)
-    if entry not in ("ObjectProbe", "SpriteGame"):
-        raise ValueError("This adapter only supports the two checked-in probe entry points")
-    if output.exists():
-        shutil.rmtree(output)
-    output.mkdir(parents=True)
-    paths = list((generated / "classes/probe").glob("*"))
-    paths += [generated / "classes/java/lang/Object.h", generated / "strings.h"]
-    paths += primitive_array_files(generated)
-    for source in paths:
-        target = output / source.relative_to(generated)
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source, target)
-    for filename in ("runtime.h", "runtime.c"):
-        shutil.copyfile(ROOT / "native/tiny" / filename, output / filename)
-    allocator = output / "classes/org/teavm/runtime/Allocator.h"
-    allocator.parent.mkdir(parents=True, exist_ok=True)
-    allocator.write_text('#include "../../../../runtime.h"\n')
-    sources = ['#include "runtime.c"']
-    sources += primitive_array_includes(output)
-    sources += [f'#include "{path.relative_to(output)}"' for path in sorted((output / "classes/probe").glob("*.c"))]
-    sources += [f"void main(void) {{ meth_p_{entry}_main(NULL); for (;;) gb_wait_frame(); }}"]
-    (output / "game.c").write_text("\n".join(sources) + "\n")
-    return output / "game.c"
-
-
 def stage_planned(generated, output, entry):
     import json
     generated, output = Path(generated), Path(output)
@@ -65,6 +38,7 @@ def stage_planned(generated, output, entry):
         shutil.rmtree(output)
     output.mkdir(parents=True)
     paths = list((generated / "classes/probe").glob("*"))
+    paths += list((generated / "classes/dev/java2gb/api").glob("*"))
     paths += [generated / "classes/java/lang/Object.h", generated / "strings.h", generated / "planned_storage.c", generated / "planned_entry.c"]
     paths += primitive_array_files(generated)
     for source in paths:
@@ -103,7 +77,7 @@ def stage_planned(generated, output, entry):
     allocator.write_text('#include "../../../../runtime.h"\n')
     sources = ['#include "runtime.c"']
     sources += primitive_array_includes(output)
-    sources += [f'#include "{path.relative_to(output)}"' for path in sorted((output / "classes/probe").glob("*.c"))]
+    sources += [f'#include "{path.relative_to(output)}"' for path in sorted((output / "classes").rglob("*.c"))]
     sources += ['#include "planned_entry.c"']
     sources += [f'#include "{path.relative_to(output)}"'
                 for path in sorted((output / "rom_arrays").glob("*.c"))]

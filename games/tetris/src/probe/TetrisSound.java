@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 import static probe.TetrisHardware.*;
 import static probe.TetrisLayout.BYTE_MASK;

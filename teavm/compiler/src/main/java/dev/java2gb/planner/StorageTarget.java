@@ -75,12 +75,12 @@ final class StorageTarget extends CTarget {
         return caller -> callee -> {
             var cls = controller.getUnprocessedClassSource().get(callee.getClassName());
             var method = cls != null ? cls.getMethod(callee.getDescriptor()) : null;
-            return method == null || method.getAnnotations().get("probe.NoInline") == null;
+            return method == null || method.getAnnotations().get("dev.java2gb.api.NoInline") == null;
         };
     }
 
     @Override public void afterOptimizations(Program program, MethodReader method) {
-        if (method.getOwnerName().startsWith(prefix)) {
+        if (ApplicationScope.contains(prefix, method.getOwnerName())) {
             programs.put(method.getReference(), ProgramUtils.copy(program));
         }
         super.afterOptimizations(program, method);

@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 public final class PinballFeel {
     static void place(PinballGame.Table t,int x,int y,int vx,int vy) {
         PinballPhysics.place(t,x,y,vx,vy); t.ball.gravityPhase = 0;

@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 public final class PokemonSpinner {
   public static final int DRAG = 7, TURN = 0x1800, MAX_TURNS = 100, MAX_CHARGE = 15;

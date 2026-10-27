@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 public final class PokemonBonusGraphics {
   private PokemonBonusGraphics() {}
   @NoInline public static void paint(final int code) {

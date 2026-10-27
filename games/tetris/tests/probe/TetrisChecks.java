@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 public final class TetrisChecks {
   public static final class CharacterState {

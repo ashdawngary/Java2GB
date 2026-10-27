@@ -22,7 +22,7 @@ final class StaticStrings implements ClassHolderTransformer, Intrinsic {
             || name.equals("java.lang.StringBuffer");
     }
     @Override public void transformClass(ClassHolder cls, ClassHolderTransformerContext context) {
-        if (!cls.getName().startsWith(prefix)) return;
+        if (!ApplicationScope.contains(prefix, cls.getName())) return;
         for (MethodHolder method : List.copyOf(cls.getMethods())) {
             Program program = method.getProgram();
             if (program == null) continue;
@@ -85,7 +85,7 @@ final class StaticStrings implements ClassHolderTransformer, Intrinsic {
         return true;
     }
     private boolean textQuery(MethodReference method) {
-        return method.getClassName().equals("probe.GameBoy") && Set.of(
+        return method.getClassName().equals("dev.java2gb.api.GameBoy") && Set.of(
             "textTile(Ljava/lang/String;IZ)I", "textWidth(Ljava/lang/String;)I").contains(method.getDescriptor().toString());
     }
     @Override public boolean canHandle(MethodReference method) { return operations.containsKey(method) || textQuery(method); }

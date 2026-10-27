@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 public final class PinballAnimations {
     public static int compute() {
         PinballGame.Table table = new PinballGame.Table();

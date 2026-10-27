@@ -47,12 +47,12 @@ final class RomArrays implements ClassHolderTransformer, Intrinsic {
     RomArrays(String prefix) { this.prefix = prefix; }
 
     @Override public void transformClass(ClassHolder cls, ClassHolderTransformerContext context) {
-        if (!cls.getName().startsWith(prefix)) {
+        if (!ApplicationScope.contains(prefix, cls.getName())) {
             return;
         }
         boolean convertedText = false;
         for (FieldHolder field : cls.getFields()) {
-            var annotation = field.getAnnotations().get("probe.RomData");
+            var annotation = field.getAnnotations().get("dev.java2gb.api.RomData");
             if (annotation == null) {
                 continue;
             }
@@ -80,7 +80,7 @@ final class RomArrays implements ClassHolderTransformer, Intrinsic {
         for (MethodHolder method : List.copyOf(cls.getMethods())) {
             if (method.getProgram() == null) { continue; }
             for (Instruction insn : instructions(method.getProgram())) {
-                if (insn instanceof InvokeInstruction call && call.getMethod().getClassName().equals("probe.RomText")) {
+                if (insn instanceof InvokeInstruction call && call.getMethod().getClassName().equals("dev.java2gb.api.RomText")) {
                     fail(method.getReference(), insn, "RomText calls require a literal @RomData field initializer");
                 }
             }
@@ -118,7 +118,7 @@ final class RomArrays implements ClassHolderTransformer, Intrinsic {
         }
         PutFieldInstruction publication = publications.get(0);
         Instruction origin = origin(publication.getValue(), definitions, new HashSet<>());
-        if (origin instanceof InvokeInstruction factory && factory.getMethod().getClassName().equals("probe.RomText")) {
+        if (origin instanceof InvokeInstruction factory && factory.getMethod().getClassName().equals("dev.java2gb.api.RomText")) {
             extractText(cls, table, initializer, publication, factory, definitions, instructions);
             return;
         }
@@ -456,7 +456,7 @@ final class RomArrays implements ClassHolderTransformer, Intrinsic {
         insn.replace(call);
     }
     static boolean readonlyMemory(MethodReference method) {
-        return method.getClassName().equals("probe.RomMemory") && Set.of(
+        return method.getClassName().equals("dev.java2gb.api.RomMemory") && Set.of(
                 "readIntLE([BI)I", "copyToVram([BIIII)V", "copyToPort([BIII)V", "copyToOam([BI)V")
                 .contains(method.getDescriptor().toString());
     }

@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 final class PinballScores {
     int first, second, third, fourth, fifth;

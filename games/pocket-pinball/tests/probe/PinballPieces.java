@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 public final class PinballPieces {
     static void place(PinballGame.Table table, int x, int y, int vx, int vy) {
         PinballPhysics.place(table, x, y, vx, vy);

@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 public final class PokemonSceneData {
   private PokemonSceneData() {}

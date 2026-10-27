@@ -6,7 +6,7 @@ import org.teavm.model.instructions.*;
 import org.teavm.model.util.ProgramUtils;
 
 final class MutabilityContracts implements ClassHolderTransformer {
-    private static final String ANNOTATION = "probe.Mutable";
+    private static final String ANNOTATION = "dev.java2gb.api.Mutable";
     private record Origin(String description, boolean mutable, boolean rom) {}
     private static final class Method {
         final MethodReference reference;
@@ -39,9 +39,9 @@ final class MutabilityContracts implements ClassHolderTransformer {
     MutabilityContracts(String prefix) { this.prefix = prefix; }
 
     @Override public void transformClass(ClassHolder cls, ClassHolderTransformerContext context) {
-        if (!cls.getName().startsWith(prefix)) { return; }
+        if (!ApplicationScope.contains(prefix, cls.getName())) { return; }
         for (FieldHolder field : cls.getFields()) {
-            if (field.getAnnotations().get("probe.RomData") != null) {
+            if (field.getAnnotations().get("dev.java2gb.api.RomData") != null) {
                 romFields.put(field.getReference(), origins.size());
                 origins.add(new Origin(field.getReference().toString(), false, true));
             }

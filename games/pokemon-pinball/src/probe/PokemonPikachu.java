@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 public final class PokemonPikachu {
   public static final int IDLE = 0, SAVING = 1, MISSED = 2, SAVE_RUMBLE = 96;

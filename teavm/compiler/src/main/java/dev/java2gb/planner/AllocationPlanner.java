@@ -169,7 +169,7 @@ final class AllocationPlanner {
 
     private void validateField(Info info, Instruction insn, FieldReference field, ValueType type, boolean instance) {
         String prefix = entry.substring(0, entry.lastIndexOf('.') + 1);
-        if (!field.getClassName().startsWith(prefix)) fail(info, insn, "GBMEM005", "External class fields are unsupported: " + field);
+        if (!ApplicationScope.contains(prefix, field.getClassName())) fail(info, insn, "GBMEM005", "External class fields are unsupported: " + field);
         if (!reference(type) && width(type) == 0) fail(info, insn, "GBMEM005", "Unsupported field type " + field);
         if (!methods.keySet().stream().anyMatch(m -> m.getClassName().equals(field.getClassName()))
                 && classes.get(field.getClassName()) == null) fail(info, insn, "GBMEM005", "Unknown field owner " + field);
@@ -180,16 +180,16 @@ final class AllocationPlanner {
         MethodReference ref = call.getMethod();
         if (strings.allow(ref)) return true;
         if (romArrays.allow(ref)) return true;
-        if (ref.getClassName().equals("probe.GameBoyHardware")) {
+        if (ref.getClassName().equals("dev.java2gb.api.GameBoyHardware")) {
             return Set.of("color()Z", "fast()V", "clock()I", "lcdOff()V", "read(I)I", "write(II)V",
                     "oamPacked(II)V", "vramPacked(II)V", "vramFill(III)V", "vramSpan(III)V", "vblank(I)V", "raster(III)V", "trap(I)V")
                     .contains(ref.getDescriptor().toString());
         }
-        if (ref.getClassName().equals("probe.GameBoySerial")) {
+        if (ref.getClassName().equals("dev.java2gb.api.GameBoySerial")) {
             return Set.of("open()V", "close()V", "arm(II)V", "reload(II)V", "schedule(I)V", "delay250()V", "read()I")
                     .contains(ref.getDescriptor().toString());
         }
-        if (!ref.getClassName().equals("probe.GameBoy")) return false;
+        if (!ref.getClassName().equals("dev.java2gb.api.GameBoy")) return false;
         boolean allowed = Set.of("init()V", "tileRow(III)V", "show()V", "buttons()I", "moveSprite(II)V", "sprite(III)V", "spriteFlip(II)V", "hideSprites(II)V", "waitFrame()V", "report(I)V", "defineTile(IIII)V", "loadTileSet()V", "textTile(Ljava/lang/String;IZ)I", "textWidth(Ljava/lang/String;)I", "saveOpen()V", "saveRead(I)I", "saveWrite(II)V", "saveClose()V", "background(III)V", "backgroundPair(III)V", "backgroundColumn(III)V", "spriteTile(II)V", "display()V", "spriteChain(IIIIII)V", "scroll(II)V", "window(III)V", "hud(I)V", "viewport(I)V")
                 .contains(ref.getDescriptor().toString());
         if (allowed) {
@@ -201,7 +201,7 @@ final class AllocationPlanner {
 
     private int objectSize(String name, Info info, Instruction insn) {
         String prefix = entry.substring(0, entry.lastIndexOf('.') + 1);
-        if (!name.startsWith(prefix)) fail(info, insn, "GBMEM005", "Only application classes can be allocated: " + name);
+        if (!ApplicationScope.contains(prefix, name)) fail(info, insn, "GBMEM005", "Only application classes can be allocated: " + name);
         ClassHolder cls = classes.get(name);
         if (cls == null || !"java.lang.Object".equals(cls.getParent()) || !cls.getInterfaces().isEmpty()) {
             fail(info, insn, "GBMEM005", "Only plain classes extending Object are supported: " + name);

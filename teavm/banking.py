@@ -5,6 +5,11 @@ from pathlib import Path
 SIGNATURE = re.compile(r'^(?P<prefix>(?:extern )?(?:void\*|TeaVM_Array\*|void|int32_t|int64_t|float|double) )(?P<name>(?:meth_|initclass_|sysinitclass_|supertypeof_)\w+)\((?P<args>[^\n()]*)\)(?P<end> \{|;)', re.M)
 
 
+def application_files(root, suffix):
+    return sorted(path for package in ('probe', 'dev/java2gb/api')
+                  for path in (root / 'classes' / package).glob('*' + suffix))
+
+
 def compiler_flags(generated):
     plan = json.loads((Path(generated) / 'storage-plan.json').read_text())
     flags = plan.get('rom_arrays', {}).get('sdcc_flags', [])
@@ -34,16 +39,16 @@ def stage(staged, entry, resident_methods=(), placements=None):
     units = []
     placements = placements or {}
     fixed_classes = {'GameBoy', entry}
-    fixed_methods = {m['name'] for source in (output / 'classes/probe').glob('*.c')
+    fixed_methods = {m['name'] for source in application_files(output, '.c')
                      if source.stem in fixed_classes for m in SIGNATURE.finditer(source.read_text())} | set(resident_methods)
-    for index, source in enumerate(sorted((output / 'classes/probe').glob('*.c'))):
+    for index, source in enumerate(application_files(output, '.c')):
         text = source.read_text()
         placement = '' if source.stem in fixed_classes else f'#pragma bank {placements.get(source.stem, 255)}\n' + f'BANKREF(gb_java_unit_{index})\n'
         source.write_text('#include <gb/gb.h>\n' + placement + annotate(text, fixed_methods))
         units.append(source)
-    for header in (output / 'classes/probe').glob('*.h'):
+    for header in application_files(output, '.h'):
         header.write_text(annotate(header.read_text(), fixed_methods))
-    headers = [f'#include "{h.relative_to(output)}"' for h in sorted((output/'classes/probe').glob('*.h'))]
+    headers = [f'#include "{h.relative_to(output)}"' for h in application_files(output, '.h')]
     sources = ['#include "runtime.c"'] + headers
     sources += [f'#include "{source.relative_to(output)}"'
                 for directory in ('primitives', 'arrays/primitives')

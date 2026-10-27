@@ -35,4 +35,4 @@ public static void update() {
 }
 ```
 
-`@RomData` places immutable data in cartridge ROM, `@Mutable` declares array writes, and the hardware APIs expose controller input, frame timing, and video memory transfers.
+`@RomData` places immutable data in cartridge ROM, `@Mutable` declares array writes, and the hardware APIs expose controller input, frame timing, and video memory transfers. These APIs live in `dev.java2gb.api`.

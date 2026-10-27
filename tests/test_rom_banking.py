@@ -9,6 +9,27 @@ spec.loader.exec_module(banking)
 
 
 class RomBankingValidationTests(unittest.TestCase):
+    def test_api_units_are_staged_without_banking_runtime_declarations(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = {
+                'classes/probe/Example.c': 'void meth_p_Example_main(void* args) {}\n',
+                'classes/probe/Example.h': 'extern void meth_p_Example_main(void* args);\n',
+                'classes/dev/java2gb/api/GameBoy.c': 'void meth_dja_GameBoy_init(void) {}\n',
+                'classes/dev/java2gb/api/GameBoy.h': 'extern void meth_dja_GameBoy_init(void);\n',
+                'classes/java/lang/Object.h': 'extern void meth_jl_Object__init_(void* self);\n',
+            }
+            for name, content in files.items():
+                path = root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(content)
+            output, units = banking.stage(root, 'Example')
+            self.assertIn(output / 'classes/probe/Example.c', units)
+            self.assertIn(output / 'classes/dev/java2gb/api/GameBoy.c', units)
+            self.assertIn('__nonbanked', (output / 'classes/dev/java2gb/api/GameBoy.h').read_text())
+            self.assertEqual((output / 'classes/java/lang/Object.h').read_text(),
+                             files['classes/java/lang/Object.h'])
+
     def test_plain_function_pointer_cannot_target_banked_java(self):
         with self.assertRaisesRegex(ValueError, 'GBROM001'):
             banking.annotate('void* callback = &meth_p_Test_run;\n')

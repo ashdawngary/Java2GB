@@ -1,4 +1,5 @@
 package probe;
+import dev.java2gb.api.*;
 
 public final class PinballGame {
     static final int READY = 0, PLAY = 1, OVER = 3;
